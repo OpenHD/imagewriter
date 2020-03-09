@@ -3,6 +3,8 @@
 
 cmake_minimum_required(VERSION 2.8.12)
 if (APPLE)
+set(CMAKE_C_COMPILER clang)
+set(CMAKE_CXX_COMPILER clang++)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13" CACHE STRING "" FORCE)
 endif()
 

@@ -10,6 +10,8 @@
 #include <security/Authorization.h>
 #include <QDebug>
 
+#include <errno.h>
+
 MacFile::MacFile(QObject *parent)
     : QFile(parent)
 {
